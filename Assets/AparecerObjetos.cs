@@ -30,9 +30,9 @@ public class AparecerObjetos : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             currentIndex--;
-            if (currentIndex >= Objetos.Length)
+            if (currentIndex <= -1)
             {
-                currentIndex =+ 5;
+                currentIndex = 4;
             }
             BorrarObejetosIniciales();
             ActivarConElIndex(currentIndex);
